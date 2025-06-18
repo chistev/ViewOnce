@@ -71,7 +71,6 @@ body {
     padding: 4rem 2rem;
 }
 
-/* Overlay to darken the background */
 .hero-content::before {
     content: "";
     position: absolute;
@@ -79,7 +78,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Adjust darkness here */
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 1rem;
     z-index: 1;
 }
@@ -133,27 +132,52 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
-.steps li {
+.step {
     display: flex;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: #ccc;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    position: relative;
 }
 
-.steps .icon {
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step-icon {
     width: 24px;
     height: 24px;
     margin-right: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
 }
 
-.steps .icon svg {
+.step-icon svg {
     width: 100%;
     height: 100%;
     fill: white;
+}
+
+.step-icon::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% + 20px);
+    background-color: #444;
+    z-index: 0;
+}
+
+.step:last-child .step-icon::after {
+    display: none;
+}
+
+.step-text {
+    color: #ccc;
+    font-size: 1rem;
 }

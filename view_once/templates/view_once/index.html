@@ -10,10 +10,8 @@
 <body>
     <nav class="navbar">
         <div class="navbar-left">
-            <!-- Gear Icon SVG -->
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M11.983 1.013a1 1 0 00-1.966 0l-.16 1.143a7.004 7.004 0 00-1.566.907l-1.075-.622a1 1 0 00-1.366.366l-.983 1.703a1 1 0 00.366 1.366l1.075.622a7.028 7.028 0 000 1.814l-1.075.622a1 1 0 00-.366 1.366l.983 1.703a1 1 0 001.366.366l1.075-.622c.472.386.987.703 1.566.907l.16 1.143a1 1 0 001.966 0l.16-1.143a7.004 7.004 0 001.566-.907l1.075.622a1 1 0 001.366-.366l.983-1.703a1 1 0 00-.366-1.366l-1.075-.622a7.028 7.028 0 000-1.814l1.075-.622a1 1 0 00.366-1.366l-.983-1.703a1 1 0 00-1.366-.366l-1.075.622a7.004 7.004 0 00-1.566-.907l-.16-1.143zM10 13a3 3 0 110-6 3 3 0 010 6z" />
+                <path d="M11.983 1.013a1 1 0 00-1.966 0l-.16 1.143a7.004 7.004 0 00-1.566.907l-1.075-.622a1 1 0 00-1.366.366l-.983 1.703a1 1 0 00.366 1.366l1.075.622a7.028 7.028 0 000 1.814l-1.075.622a1 1 0 00-.366 1.366l.983 1.703a1 1 0 001.366.366l1.075-.622c.472.386.987.703 1.566.907l.16 1.143a1 1 0 001.966 0l.16-1.143a7.004 7.004 0 001.566-.907l1.075.622a1 1 0 001.366-.366l.983-1.703a1 1 0 00-.366-1.366l-1.075-.622a7.028 7.028 0 000-1.814l1.075-.622a1 1 0 00.366-1.366l-.983-1.703a1 1 0 00-1.366-.366l-1.075.622a7.004 7.004 0 00-1.566-.907l-.16-1.143zM10 13a3 3 0 110-6 3 3 0 010 6z" />
             </svg>
             ViewOnce
         </div>
@@ -24,6 +22,7 @@
             <a href="#" class="get-started">Get Started</a>
         </div>
     </nav>
+
     <div class="hero-section">
         <div class="hero-content">
             <h1>Share Messages and Files That Disappear</h1>
@@ -35,54 +34,50 @@
             <a href="#" class="hero-button">Create One-Time Link</a>
         </div>
     </div>
+
     <div class="how-it-works">
         <h2>How It Works</h2>
         <ul class="steps">
-            <li>
-                <span class="icon">
-                    <!-- Upload Icon -->
+            <li class="step">
+                <div class="step-icon">
                     <svg viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M3 14a1 1 0 011-1h3v-4H5l5-5 5 5h-2v4h3a1 1 0 011 1v3a1 1 0 11-2 0v-2H5v2a1 1 0 11-2 0v-3z"
                             clip-rule="evenodd" />
                     </svg>
-
-                </span>
-                Upload a File or Write a Message
+                </div>
+                <div class="step-text">Upload a File or Write a Message</div>
             </li>
-            <li>
-                <span class="icon">
-                    <!-- Link Icon -->
+            <li class="step">
+                <div class="step-icon">
                     <svg viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12.293 7.293a1 1 0 011.414 1.414L10.414 12H14a1 1 0 110 2H8a1 1 0 01-1-1V8a1 1 0 112 0v3.586l3.293-3.293z" />
                     </svg>
-                </span>
-                Receive a One-Time Access Link
+                </div>
+                <div class="step-text">Receive a One-Time Access Link</div>
             </li>
-            <li>
-                <span class="icon">
-                    <!-- Share Icon -->
+            <li class="step">
+                <div class="step-icon">
                     <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.88L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.11C16.5 7.62 17.22 7.92 18 7.92C19.66 7.92 21 6.58 21 4.96C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 4.96C15 5.2 15.04 5.43 15.09 5.66L8.04 9.85C7.5 9.34 6.78 9.04 6 9.04C4.34 9.04 3 10.38 3 12C3 13.62 4.34 14.96 6 14.96C6.78 14.96 7.5 14.66 8.04 14.15L15.16 18.34C15.11 18.56 15.08 18.78 15.08 19C15.08 20.66 16.42 22 18.08 22C19.74 22 21.08 20.66 21.08 19C21.08 17.34 19.74 16 18.08 16Z" />
                     </svg>
-
-                </span>
-                Share It – Once Clicked, It Redirects and Self-Destructs
+                </div>
+                <div class="step-text">Share It – Once Clicked, It Redirects and Self-Destructs</div>
             </li>
-            <li>
-                <span class="icon">
-                    <!-- Lock Icon -->
+            <li class="step">
+                <div class="step-icon">
                     <svg viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M10 2a4 4 0 00-4 4v2H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-1V6a4 4 0 00-4-4zM8 6a2 2 0 114 0v2H8V6zm-1 6a1 1 0 112 0 1 1 0 01-2 0z"
                             clip-rule="evenodd" />
                     </svg>
-                </span>
-                Link Destination is Unique and Unlinkable to Sender
+                </div>
+                <div class="step-text">Link Destination is Unique and Unlinkable to Sender</div>
             </li>
         </ul>
     </div>
 </body>
+
 </html>
