@@ -1,28 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
+{% extends 'view_once/base.html' %}
 
-<head>
-    <title>View Once App</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'view_once/css/index.css' %}">
-</head>
+{% block title %}View Once{% endblock %}
 
-<body>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.983 1.013a1 1 0 00-1.966 0l-.16 1.143a7.004 7.004 0 00-1.566.907l-1.075-.622a1 1 0 00-1.366.366l-.983 1.703a1 1 0 00.366 1.366l1.075.622a7.028 7.028 0 000 1.814l-1.075.622a1 1 0 00-.366 1.366l.983 1.703a1 1 0 001.366.366l1.075-.622c.472.386.987.703 1.566.907l.16 1.143a1 1 0 001.966 0l.16-1.143a7.004 7.004 0 001.566-.907l1.075.622a1 1 0 001.366-.366l.983-1.703a1 1 0 00-.366-1.366l-1.075-.622a7.028 7.028 0 000-1.814l1.075-.622a1 1 0 00.366-1.366l-.983-1.703a1 1 0 00-1.366-.366l-1.075.622a7.004 7.004 0 00-1.566-.907l-.16-1.143zM10 13a3 3 0 110-6 3 3 0 010 6z" />
-            </svg>
-            ViewOnce
-        </div>
-        <div class="navbar-right">
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Support</a>
-            <a href="#" class="get-started">Get Started</a>
-        </div>
-    </nav>
-
+{% block content %}
     <div class="hero-section">
         <div class="hero-content">
             <h1>Share Messages and Files That Disappear</h1>
@@ -109,15 +89,4 @@
     <a href="#" class="secure-button">Create One-Time Link</a>
 </div>
 </div>
-<div class="footer">
-    <div class="footer-links">
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Contact Us</a>
-    </div>
-    <div class="footer-copy">
-        © {% now "Y" %} ViewOnce. All rights reserved.
-    </div>
-</div>
-</body>
-</html>
+{% endblock %}

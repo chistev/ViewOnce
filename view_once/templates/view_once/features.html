@@ -1,0 +1,110 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Features - ViewOnce{% endblock %}
+
+{% block content %}
+<section class="features-section">
+    <div class="features-content">
+        <h2>Features</h2>
+        <p>Explore the robust features of ViewOnce designed to ensure your sensitive information remains private and
+            secure.</p>
+
+        <h3 class="core-features-heading">Core Features</h3>
+        <div class="core-features-grid">
+            <div class="feature-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.65 10a5 5 0 00-9.65 2 5 5 0 008.96 2.65l.71.71v1.59h2v2h2v-2h2v-2.41l4.29-4.3a1 1 0 000-1.41l-2.59-2.59a1 1 0 00-1.41 0l-4.3 4.29H13l-.71-.71A4.97 4.97 0 0012.65 10zm-6.15 2a2 2 0 114 0 2 2 0 01-4 0z" />
+                </svg>
+                <div>
+                    <h4>One-Time Access Only</h4>
+                    <p>Links can only be opened once before self-destructing.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17 8h-1V6a4 4 0 10-8 0v2H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V10a2 2 0 00-2-2zm-6 7a1 1 0 112 0 1 1 0 01-2 0zm4-7H9V6a3 3 0 116 0v2z" />
+                </svg>
+
+                <div>
+                    <h4>End-to-End Encryption</h4>
+                    <p>Files and messages are encrypted in transit and at rest.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10c0 1.38-.28 2.69-.77 3.88L12 12v10z" />
+                </svg>
+                <div>
+                    <h4>Temporary Hosting</h4>
+                    <p>Messages/files are automatically deleted after use or timeout.</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="core-features-heading" style="margin-top: 3rem;">Advanced Privacy Options</h3>
+<div class="privacy-options">
+    <details open>
+        <summary>Set Expiration Times</summary>
+        <p>Choose from various expiration times, such as 10 minutes, 1 hour, or 1 day, to control how long your content remains accessible.</p>
+    </details>
+    <details>
+        <summary>Self-Destruct Options</summary>
+        <p>Configure links to destroy themselves after being viewed, after a specific time, or based on a custom trigger.</p>
+    </details>
+    <details>
+        <summary>API Access for Developers</summary>
+        <p>Integrate ViewOnce into your own applications using our secure API for automated secure sharing.</p>
+    </details>
+</div>
+
+<h3 class="core-features-heading" style="margin-top: 3rem;">Why ViewOnce vs Others</h3>
+<div class="comparison-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>ViewOnce</th>
+                <th>Email</th>
+                <th>Cloud Drive (Shared Links)</th>
+                <th>Messaging Apps</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One-Time Access</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Encryption</td>
+                <td>Yes</td>
+                <td>Limited</td>
+                <td>Limited</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Temporary Hosting</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Limited</td>
+            </tr>
+            <tr>
+                <td>Anonymity</td>
+                <td>High</td>
+                <td>Low</td>
+                <td>Low</td>
+                <td>Medium</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+</section>
+{% endblock %}
