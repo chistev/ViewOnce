@@ -5,3 +5,6 @@ def home(request):
 
 def features(request):
     return render(request, 'view_once/features.html')
+
+def pricing(request):
+    return render(request, 'view_once/pricing.html')
