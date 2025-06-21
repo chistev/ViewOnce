@@ -8,3 +8,6 @@ def features(request):
 
 def pricing(request):
     return render(request, 'view_once/pricing.html')
+
+def support(request):
+    return render(request, 'view_once/support.html')

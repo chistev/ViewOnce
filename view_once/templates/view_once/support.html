@@ -1,0 +1,106 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Support - ViewOnce{% endblock %}
+
+{% block content %}
+
+<div class="support-hero">
+    <div class="support-hero-content">
+        <h1>Need Help? We’re Here.</h1>
+        <p>Find answers, contact support, or learn how ViewOnce works.</p>
+        <a href="#" class="support-button">Contact Support</a>
+    </div>
+</div>
+
+<div class="help-center">
+    <h2 class="help-center-title">Help Center Categories</h2>
+    <div class="help-center-grid">
+        <div class="help-card">
+            <div class="help-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 11.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zm1-2.75h-2V7h2v3.5z" />
+                </svg>
+            </div>
+            <div>
+                <strong>Getting Started</strong>
+                <p>Learn the basics of using ViewOnce.</p>
+            </div>
+        </div>
+        <div class="help-card">
+            <div class="help-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M6 2h12v2H6V2zm1 5h10v2H7V7zm-1 5h12v10H6V12zm2 2v6h8v-6H8z" />
+                </svg>
+            </div>
+            <div>
+                <strong>Link Expiration & Access</strong>
+                <p>Understand how links expire and manage access.</p>
+            </div>
+        </div>
+        <div class="help-card">
+            <div class="help-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 1a9 9 0 00-9 9v4H2v8h20v-8h-1v-4a9 9 0 00-9-9zm0 2a7 7 0 017 7v4H5v-4a7 7 0 017-7zm-1 11h2v3h-2v-3z" />
+                </svg>
+            </div>
+            <div>
+                <strong>Security & Encryption</strong>
+                <p>Explore our security measures and encryption.</p>
+            </div>
+        </div>
+        <div class="help-card">
+            <div class="help-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M3 3h18v2H3V3zm2 4h14v2H5V7zm-2 4h18v10H3V11zm2 2v6h14v-6H5z" />
+                </svg>
+            </div>
+            <div>
+                <strong>Account & Billing</strong>
+                <p>Manage your account and billing information.</p>
+            </div>
+        </div>
+        <div class="help-card">
+            <div class="help-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M8.7 7.3a1 1 0 00-1.4 1.4L10.6 12l-3.3 3.3a1 1 0 001.4 1.4l4-4a1 1 0 000-1.4l-4-4zm6.6 0a1 1 0 00-1.4 1.4L17.4 12l-3.5 3.3a1 1 0 001.4 1.4l4-4a1 1 0 000-1.4l-4-4z" />
+                </svg>
+            </div>
+            <div>
+                <strong>API & Developer Help</strong>
+                <p>Get help with our API and developer tools.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+        <summary>How do one-time links work?</summary>
+        <p>ViewOnce's one-time links ensure that your message or file can only be accessed once. After the recipient views the content, the link automatically expires and the content is permanently deleted from our servers, ensuring maximum privacy and security.</p>
+    </details>
+    <details>
+        <summary>Can I retrieve a deleted message?</summary>
+        <p>No, once a message is deleted, it cannot be retrieved permanently from our servers, ensuring maximum privacy and security.</p>
+    </details>
+    <details>
+        <summary>How secure is my data with ViewOnce?</summary>
+        <p>ViewOnce is committed to providing a secure and private platform for sharing sensitive information. We use industry-leading encryption and security practices to protect your data.</p>
+    </details>
+</div>
+
+<div class="contact-support">
+    <h2>Contact Support</h2>
+    <a href="mailto:support@ViewOnce.com" class="support-button">Email Support</a>
+</div>
+
+<div class="trust-security">
+    <h2>Trust & Security</h2>
+    <p>ViewOnce is committed to providing a secure and private platform for sharing sensitive information. We use industry-leading encryption and security practices to protect your data.</p>
+</div>
+
+{% endblock %}
