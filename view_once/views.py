@@ -11,3 +11,6 @@ def pricing(request):
 
 def support(request):
     return render(request, 'view_once/support.html')
+
+def login_view(request):
+    return render(request, 'view_once/login.html')

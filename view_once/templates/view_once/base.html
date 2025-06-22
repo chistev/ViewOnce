@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{% static 'view_once/css/features.css' %}">
     <link rel="stylesheet" href="{% static 'view_once/css/pricing.css' %}">
     <link rel="stylesheet" href="{% static 'view_once/css/support.css' %}">
+    <link rel="stylesheet" href="{% static 'view_once/css/login.css' %}">
 </head>
 <body>
     <nav class="navbar">
@@ -20,7 +21,7 @@
             <a href="{% url 'features' %}">Features</a>
             <a href="{% url 'pricing' %}">Pricing</a>
             <a href="{% url 'support' %}">Support</a>
-            <a href="#" class="get-started">Get Started</a>
+            <a href="{% url 'login' %}" class="get-started">Get Started</a>
         </div>
     </nav>
 
