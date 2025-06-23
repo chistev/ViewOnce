@@ -21,6 +21,14 @@ body {
     color: white;
 }
 
+.brand-link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
 .navbar-left svg {
     width: 18px;
     height: 18px;
