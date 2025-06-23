@@ -14,3 +14,6 @@ def support(request):
 
 def login_view(request):
     return render(request, 'view_once/login.html')
+
+def dashboard(request):
+    return render(request, 'view_once/dashboard.html')
