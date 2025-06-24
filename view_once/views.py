@@ -17,3 +17,6 @@ def login_view(request):
 
 def dashboard(request):
     return render(request, 'view_once/dashboard.html')
+
+def terms(request):
+    return render(request, 'view_once/terms.html')

@@ -85,6 +85,57 @@
                     Password prompt
                 </label>
             </div>
+            <input type="password" placeholder="Enter Password (if enabled)" class="password-input" />
+
+
+<button class="generate-button">
+    <strong>Generate Secure Link</strong>
+</button>
+<div class="plan-summary">
+    <div class="plan-header">
+        <div>
+            <h2>Plan Summary</h2>
+            <p>Free Plan</p>
+        </div>
+        <button class="upgrade-button">Upgrade</button>
+    </div>
+</div>
+
+
+<div class="recent-links">
+    <h2>Recent Links</h2>
+    <table class="links-table">
+        <thead>
+            <tr>
+                <th>Link</th>
+                <th>Status</th>
+                <th>Expiration</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#">secure.link/xyz123</a></td>
+                <td><span class="status used">Used</span></td>
+                <td>1 Hour Ago</td>
+                <td><a href="#">Copy</a>, <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">secure.link/abc456</a></td>
+                <td><span class="status active">Active</span></td>
+                <td>Expires in 2 Days</td>
+                <td><a href="#">Copy</a>, <a href="#">Delete</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">secure.link/def789</a></td>
+                <td><span class="status expired">Expired</span></td>
+                <td>2 Weeks Ago</td>
+                <td><a href="#">Copy</a>, <a href="#">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 
         </div>
 

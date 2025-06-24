@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{% static 'view_once/css/pricing.css' %}">
     <link rel="stylesheet" href="{% static 'view_once/css/support.css' %}">
     <link rel="stylesheet" href="{% static 'view_once/css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'view_once/css/dashboard.css' %}">
 </head>
 <body>
     <nav class="navbar">
@@ -31,7 +32,7 @@
 
     <div class="footer">
         <div class="footer-links">
-            <a href="#">Terms of Service</a>
+            <a href="{% url 'terms' %}">Terms of Service</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Contact Us</a>
         </div>
