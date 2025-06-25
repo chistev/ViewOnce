@@ -20,3 +20,6 @@ def dashboard(request):
 
 def terms(request):
     return render(request, 'view_once/terms.html')
+
+def privacy(request):
+    return render(request, 'view_once/privacy.html')
