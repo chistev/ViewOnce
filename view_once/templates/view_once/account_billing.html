@@ -1,0 +1,90 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Account & Billing | ViewOnce{% endblock %}
+
+{% block content %}
+<div class="account-billing-section">
+    <h2>Account & Billing</h2>
+    <p>Learn how to manage your ViewOnce account, update billing information, and choose the right plan for your needs.</p>
+
+    <div class="guide-content">
+        <h3>1. Creating an Account</h3>
+        <p>
+            To use ViewOnce, you need to create an account. Visit the <a href="{% url 'login' %}">login page</a> and click "Create an account" to sign up. You’ll provide an email address and password, which are encrypted for security. Your account allows you to generate secure one-time links and access the <a href="{% url 'dashboard' %}">dashboard</a>.
+        </p>
+
+        <h3>2. Managing Your Account</h3>
+        <p>
+            You can manage your account settings directly from the dashboard:
+        </p>
+        <ul>
+            <li><strong>Update Profile</strong>: Change your email or password in the "Settings" section of the <a href="{% url 'dashboard' %}">dashboard</a>.</li>
+            <li><strong>Account Deletion</strong>: Request deletion of your account and associated metadata (e.g., usage logs, subscription info) by contacting us at <a href="mailto:privacy@viewonce.com">privacy@viewonce.com</a>. Note that messages and files are automatically deleted after access or expiration and cannot be recovered.</li>
+        </ul>
+        <p>
+            For more details on data retention, see our <a href="{% url 'privacy' %}">Privacy Policy</a>.
+        </p>
+
+        <h3>3. Choosing a Plan</h3>
+        <p>
+            ViewOnce offers three plans to suit your needs, as outlined on the <a href="{% url 'pricing' %}">Pricing page</a>:
+        </p>
+        <ul>
+            <li><strong>Free Plan</strong>: 5 links/month, 1MB file size limit, basic one-time access links.</li>
+            <li><strong>Pro Plan</strong> ($5/month): 50 links/month, 25MB file size, expiring links, custom time windows, and password protection.</li>
+            <li><strong>Team Plan</strong> ($12/month): 200+ links/month, 100MB file size, team access, analytics, and API access.</li>
+        </ul>
+        <p>
+            You can also purchase individual links with advanced options for $50 per link via the Pay-Per-Link option.
+        </p>
+
+        <h3>4. Upgrading or Changing Your Plan</h3>
+        <p>
+            To upgrade or change your plan:
+        </p>
+        <ol>
+            <li>Go to the <a href="{% url 'dashboard' %}">dashboard</a> and locate the "Plan Summary" section.</li>
+            <li>Click the "Upgrade" button to view available plans.</li>
+            <li>Select your desired plan (Pro or Team) or purchase additional links.</li>
+            <li>Follow the prompts to update your billing information through our secure payment processor.</li>
+        </ol>
+        <p>
+            For enterprise solutions (e.g., custom domains, audit logs), request a demo on the <a href="{% url 'pricing' %}">Pricing page</a>.
+        </p>
+
+        <h3>5. Billing Information</h3>
+        <p>
+            Billing is managed through a trusted third-party payment processor that complies with strong privacy and security standards. You can update your payment method or view billing history in the "Settings" section of the dashboard. For billing-related issues, contact us at <a href="mailto:support@viewonce.com">support@viewonce.com</a>.
+        </p>
+
+        <h3>6. Monitoring Usage</h3>
+        <p>
+            The "Plan Summary" in your dashboard displays your current plan and usage (e.g., number of links created). Team plan users can access additional analytics, such as link views, in the "Analytics" section. Learn more about analytics on the <a href="{% url 'link_expiration_access' %}">Link Expiration & Access page</a>.
+        </p>
+
+        <h3>7. Frequently Asked Questions</h3>
+        <details>
+            <summary>How do I update my billing information?</summary>
+            <p>Go to the "Settings" section in your <a href="{% url 'dashboard' %}">dashboard</a> to update your payment method or view billing history through our secure payment processor.</p>
+        </details>
+        <details>
+            <summary>Can I downgrade my plan?</summary>
+            <p>Yes, you can downgrade your plan in the "Settings" section of the dashboard. Note that downgrading may reduce your link creation limits or access to features like password protection or analytics.</p>
+        </details>
+        <details>
+            <summary>What happens to my data if I delete my account?</summary>
+            <p>Upon account deletion, all associated metadata (e.g., usage logs, subscription info) is removed. Messages and files are already deleted after access or expiration, ensuring no content remains. Contact <a href="mailto:privacy@viewonce.com">privacy@viewonce.com</a> to initiate deletion.</p>
+        </details>
+
+        <h3>8. Need More Help?</h3>
+        <p>
+            If you have additional questions about managing your account or billing, visit our <a href="{% url 'support' %}">Support page</a> or contact us at <a href="mailto:support@viewonce.com">support@viewonce.com</a>.
+        </p>
+    </div>
+
+    <div class="cta-section">
+        <a href="{% url 'dashboard' %}" class="support-button">Go to Dashboard</a>
+        <a href="{% url 'support' %}" class="support-button">Back to Support</a>
+    </div>
+</div>
+{% endblock %}

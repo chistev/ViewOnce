@@ -1,0 +1,69 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Getting Started | ViewOnce{% endblock %}
+
+{% block content %}
+<div class="getting-started-section">
+    <h2>Getting Started with ViewOnce</h2>
+    <p>Welcome to ViewOnce! This guide will help you get started with securely sharing messages and files using our platform.</p>
+
+    <div class="guide-content">
+        <h3>1. Create an Account</h3>
+        <p>
+            To use ViewOnce, you need to create an account. Visit the <a href="{% url 'login' %}">login page</a> and click "Create an account" to sign up. You'll need to provide an email address and a password. Your login information is encrypted for security.
+        </p>
+
+        <h3>2. Understanding One-Time Links</h3>
+        <p>
+            ViewOnce allows you to share messages or files via one-time links. These links can only be accessed once and are automatically deleted after use or upon expiration, ensuring maximum privacy. Learn more about <a href="{% url 'features' %}">our features</a>.
+        </p>
+
+        <h3>3. Generating a Secure Link</h3>
+        <p>
+            After logging into your <a href="{% url 'dashboard' %}">dashboard</a>, follow these steps to create a secure link:
+        </p>
+        <ol>
+            <li>Enter your message in the text area or upload a file (up to 1MB on the Free plan, higher limits on Pro or Team plans).</li>
+            <li>Select an expiration time (e.g., 10 minutes, 1 hour, 1 day, or 7 days).</li>
+            <li>Optionally, enable "View Once" or add a password for extra security.</li>
+            <li>Click "Generate Secure Link" to create a shareable link.</li>
+        </ol>
+
+        <h3>4. Sharing Your Link</h3>
+        <p>
+            Once generated, copy the secure link from your dashboard and share it with your recipient. The link will expire after being viewed once or when the set expiration time is reached. Recipients cannot identify the sender, ensuring anonymity.
+        </p>
+
+        <h3>5. Managing Your Links</h3>
+        <p>
+            In the "Recent Links" section of your dashboard, you can view the status of your links (e.g., Active, Used, Expired) and perform actions like copying or deleting them.
+        </p>
+
+        <h3>6. Choosing the Right Plan</h3>
+        <p>
+            ViewOnce offers multiple plans to suit your needs:
+        </p>
+        <ul>
+            <li><strong>Free Plan</strong>: 5 links/month, 1MB file size limit.</li>
+            <li><strong>Pro Plan</strong>: 50 links/month, 25MB file size, expiring links, custom time windows, and password protection.</li>
+            <li><strong>Team Plan</strong>: 200+ links/month, 100MB file size, team access, analytics, and API access.</li>
+        </ul>
+        <p>Visit the <a href="{% url 'pricing' %}">pricing page</a> to explore plans and upgrade.</p>
+
+        <h3>7. Security Features</h3>
+        <p>
+            ViewOnce uses end-to-end encryption for all messages and files, both in transit and at rest. Content is automatically deleted after access or expiration, and we do not use tracking cookies or third-party advertising tools. Learn more in our <a href="{% url 'privacy' %}">Privacy Policy</a>.
+        </p>
+
+        <h3>8. Need More Help?</h3>
+        <p>
+            If you have questions, check out our <a href="{% url 'support' %}">Support page</a> or contact us at <a href="mailto:support@viewonce.com">support@viewonce.com</a>.
+        </p>
+    </div>
+
+    <div class="cta-section">
+        <a href="{% url 'dashboard' %}" class="support-button">Go to Dashboard</a>
+        <a href="{% url 'support' %}" class="support-button">Back to Support</a>
+    </div>
+</div>
+{% endblock %}

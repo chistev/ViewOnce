@@ -1,0 +1,88 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Link Expiration & Access | ViewOnce{% endblock %}
+
+{% block content %}
+<div class="link-expiration-section">
+    <h2>Link Expiration & Access</h2>
+    <p>Learn how ViewOnce manages link expiration and access to ensure your shared content remains secure and private.</p>
+
+    <div class="guide-content">
+        <h3>1. How One-Time Links Work</h3>
+        <p>
+            ViewOnce's one-time links are designed to be accessed only once. After the recipient views the message or file, the link is automatically destroyed, and the content is permanently deleted from our servers. This ensures maximum privacy and prevents unauthorized access. Learn more about this feature on our <a href="{% url 'features' %}">Features page</a>.
+        </p>
+
+        <h3>2. Setting Expiration Times</h3>
+        <p>
+            When creating a link in the <a href="{% url 'dashboard' %}">dashboard</a>, you can choose from several expiration time options:
+        </p>
+        <ul>
+            <li><strong>10 Minutes</strong>: Ideal for highly sensitive information that needs to be accessed quickly.</li>
+            <li><strong>1 Hour</strong>: Suitable for short-term sharing.</li>
+            <li><strong>1 Day</strong>: Allows recipients a full day to access the content.</li>
+            <li><strong>7 Days</strong>: Available for Pro and Team plans, offering extended access for less urgent shares.</li>
+        </ul>
+        <p>
+            Once the selected time expires, the link becomes inaccessible, and the content is deleted, even if it hasn’t been viewed.
+        </p>
+
+        <h3>3. Managing Link Access</h3>
+        <p>
+            ViewOnce provides several tools to control who can access your links:
+        </p>
+        <ul>
+            <li><strong>View Once Option</strong>: Enable this in the dashboard to ensure the link can only be opened once, after which it self-destructs.</li>
+            <li><strong>Password Protection</strong>: Available on Pro and Team plans, you can add a password to your link for an extra layer of security. Recipients must enter the password to access the content.</li>
+            <li><strong>Anonymity</strong>: Links are designed to prevent recipients from identifying the sender, ensuring anonymity (see our <a href="{% url 'privacy' %}">Privacy Policy</a> for details).</li>
+        </ul>
+
+        <h3>4. Monitoring Link Status</h3>
+        <p>
+            In the "Recent Links" section of your <a href="{% url 'dashboard' %}">dashboard</a>, you can track the status of your links:
+        </p>
+        <ul>
+            <li><strong>Active</strong>: The link is still available and has not been accessed or expired.</li>
+            <li><strong>Used</strong>: The link has been accessed and is no longer available.</li>
+            <li><strong>Expired</strong>: The link’s expiration time has passed, and it is no longer accessible.</li>
+        </ul>
+        <p>
+            You can also perform actions like copying or deleting links from this section.
+        </p>
+
+        <h3>5. Team Access (Team Plan)</h3>
+        <p>
+            For users on the Team plan, ViewOnce allows multiple team members to manage and share links. Team access includes analytics to track link views, providing insights into how your links are used. Visit the <a href="{% url 'pricing' %}">Pricing page</a> to learn more about the Team plan.
+        </p>
+
+        <h3>6. Security and Data Deletion</h3>
+        <p>
+            All content shared via ViewOnce is encrypted in transit and at rest. Once a link is accessed or expires, the associated message or file is automatically deleted from our servers, ensuring no residual data remains. For more details, see our <a href="{% url 'privacy' %}">Privacy Policy</a>.
+        </p>
+
+        <h3>7. Frequently Asked Questions</h3>
+        <details>
+            <summary>Can I change the expiration time of a link after it’s created?</summary>
+            <p>No, once a link is generated, its expiration time cannot be modified. You can create a new link with a different expiration time if needed.</p>
+        </details>
+        <details>
+            <summary>What happens if a recipient doesn’t access the link before it expires?</summary>
+            <p>If the expiration time is reached before the link is accessed, the link becomes invalid, and the content is permanently deleted from our servers.</p>
+        </details>
+        <details>
+            <summary>Can I see who accessed my link?</summary>
+            <p>For privacy reasons, ViewOnce does not reveal the identity of link recipients. However, Team plan users can access analytics to see when a link was viewed.</p>
+        </details>
+
+        <h3>8. Need More Help?</h3>
+        <p>
+            If you have additional questions about link expiration or access, visit our <a href="{% url 'support' %}">Support page</a> or contact us at <a href="mailto:support@viewonce.com">support@viewonce.com</a>.
+        </p>
+    </div>
+
+    <div class="cta-section">
+        <a href="{% url 'dashboard' %}" class="support-button">Go to Dashboard</a>
+        <a href="{% url 'support' %}" class="support-button">Back to Support</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'view_once/base.html' %}
+
+{% block title %}Security & Encryption | ViewOnce{% endblock %}
+
+{% block content %}
+<div class="security-encryption-section">
+    <h2>Security & Encryption</h2>
+    <p>At ViewOnce, we prioritize your privacy and security. Learn about our industry-leading encryption and security measures that protect your data.</p>
+
+    <div class="guide-content">
+        <h3>1. End-to-End Encryption</h3>
+        <p>
+            All files and messages shared through ViewOnce are protected with end-to-end encryption. This means your content is encrypted during transit (from your device to our servers) and at rest (while stored on our infrastructure). Only the intended recipient with the one-time link can decrypt and access the content. Even ViewOnce cannot read your messages or files. Learn more in our <a href="{% url 'privacy' %}">Privacy Policy</a>.
+        </p>
+
+        <h3>2. One-Time Access Links</h3>
+        <p>
+            ViewOnce’s one-time links ensure that your content can only be accessed once. After the link is used, the content is automatically deleted from our servers, preventing any further access. This self-destructing mechanism enhances security by eliminating residual data. See our <a href="{% url 'link_expiration_access' %}">Link Expiration & Access page</a> for details.
+        </p>
+
+        <h3>3. Automatic Data Deletion</h3>
+        <p>
+            Content shared via ViewOnce is automatically deleted after it is accessed or when the set expiration time (e.g., 10 minutes, 1 hour, 1 day, or 7 days) is reached. This ensures that no sensitive information remains on our servers longer than necessary, reducing the risk of unauthorized access.
+        </p>
+
+        <h3>4. Link Anonymity</h3>
+        <p>
+            Our platform is designed to prevent link recipients from identifying the sender. One-time links are unlinkable to the user who created them, ensuring maximum anonymity. This is a core feature for protecting your privacy during sensitive communications.
+        </p>
+
+        <h3>5. Secure Infrastructure</h3>
+        <p>
+            ViewOnce is hosted on secure infrastructure, and we do not rely on third-party services for file or message storage. All content is managed directly on our platform, minimizing exposure to external vulnerabilities. For specific features like payment processing or support, we use trusted third-party tools that comply with stringent privacy and security standards.
+        </p>
+
+        <h3>6. No Tracking Cookies or Ads</h3>
+        <p>
+            Unlike many platforms, ViewOnce does not use tracking cookies or third-party advertising tools. We only collect essential data (e.g., email and password for authentication, usage analytics, or link creation statistics) to operate the service. No personally identifying information is stored unless explicitly provided (e.g., through support requests or billing).
+        </p>
+
+        <h3>7. Password Protection (Pro and Team Plans)</h3>
+        <p>
+            For added security, users on the Pro and Team plans can enable password protection for their links. Recipients must enter the correct password to access the content, providing an additional layer of control. Explore plan options on our <a href="{% url 'pricing' %}">Pricing page</a>.
+        </p>
+
+        <h3>8. Your Data Rights</h3>
+        <p>
+            You can request the deletion of your account and associated metadata (e.g., usage logs, subscription info) at any time by contacting us at <a href="mailto:privacy@viewonce.com">privacy@viewonce.com</a>. Since messages and files are deleted after access or expiration, no content is available for export or recovery, ensuring your data remains secure.
+        </p>
+
+        <h3>9. Frequently Asked Questions</h3>
+        <details>
+            <summary>How secure is ViewOnce’s encryption?</summary>
+            <p>ViewOnce uses industry-standard end-to-end encryption protocols to ensure that only the intended recipient can access your content. Our encryption prevents anyone, including ViewOnce, from reading your messages or files.</p>
+        </details>
+        <details>
+            <summary>Can my data be intercepted during transit?</summary>
+            <p>Our end-to-end encryption ensures that data is encrypted from the moment it leaves your device until it reaches the recipient. This makes interception during transit highly unlikely and unreadable without the decryption key.</p>
+        </details>
+        <details>
+            <summary>What happens to my data after a link expires?</summary>
+            <p>Once a link expires or is accessed, the associated content is permanently deleted from our servers, ensuring no residual data remains.</p>
+        </details>
+
+        <h3>10. Need More Help?</h3>
+        <p>
+            If you have additional questions about our security and encryption practices, visit our <a href="{% url 'support' %}">Support page</a> or contact us at <a href="mailto:support@viewonce.com">support@viewonce.com</a>.
+        </p>
+    </div>
+
+    <div class="cta-section">
+        <a href="{% url 'dashboard' %}" class="support-button">Go to Dashboard</a>
+        <a href="{% url 'support' %}" class="support-button">Back to Support</a>
+    </div>
+</div>
+{% endblock %}
