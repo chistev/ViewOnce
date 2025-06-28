@@ -26,3 +26,6 @@ def privacy(request):
 
 def links(request):
     return render(request, 'view_once/links.html')
+
+def analytics(request):
+    return render(request, 'view_once/analytics.html')

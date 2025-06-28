@@ -1,0 +1,23 @@
+{% extends 'view_once/base.html' %}
+
+{% block content %}
+<div class="dashboard-container">
+    <div class="sidebar">
+        {% include 'view_once/partials/sidebar.html' %}
+    </div>
+    <div class="main-content">
+        <div class="analytics-header">
+            <h2>Analytics</h2>
+            <p>Track how your links are being used in real time.</p>
+        </div>
+
+        <div class="storage-usage">
+            <h4>Storage Usage</h4>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%;"></div>
+            </div>
+            <p class="storage-text">60% of 10GB used</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

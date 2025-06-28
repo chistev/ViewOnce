@@ -124,3 +124,43 @@
     background-color: #3a3a3a;
     color: white;
 }
+
+.analytics-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+.analytics-header p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.storage-usage h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #3a2f2f;
+    border-radius: 9999px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    background-color: white;
+    height: 100%;
+    border-radius: 9999px 0 0 9999px;
+}
+
+.storage-text {
+    color: #ccc;
+    font-size: 0.9rem;
+}
