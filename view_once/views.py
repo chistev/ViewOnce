@@ -23,3 +23,6 @@ def terms(request):
 
 def privacy(request):
     return render(request, 'view_once/privacy.html')
+
+def links(request):
+    return render(request, 'view_once/links.html')
